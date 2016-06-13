@@ -1,0 +1,31 @@
+#GitBlog配置文件，使用4个空格代替Tab
+---
+url             : "http://gitblogdoc.sinaapp.com" #网站首页url
+title           : GitBlog文档                  #博客标题
+subtitle        : gitblog使用手册              #博客副标题
+theme           : quest                        #主题名称
+highlight       : on                           #是否开启代码高亮支持
+mathjax         : off                          #是否开启数学公式支持
+duoshuo         : jockchou                     #多说评论框ID
+baiduAnalytics  : 3f4d60758cc6cb1a5289b0b5b67b2990  #百度统计ID
+keywords        : gitblog,markdown,blog,php,github #网站关键字
+description     : GitBlog是一个简单易用的Markdown博客系统,这是GitBlog的官方文档. #网站描述
+version         : 1.0                          #系统版本号
+
+blog:
+    recentSize      : 15                       #最近博客显示条数
+    pageSize        : 15                       #每页显示博客条数
+    pageBarSize     : 5                        #翻页Bar的长度
+    allBlogsForPage : false                    #页面需要所有博客数据
+    
+author:
+    name    : jockchou                         #你的名称     
+    email   : 164068300@qq.com                 #你的邮箱
+    github  : jockchou                         #你的Github名称
+    weibo   : 2558456121                       #你的微博ID
+
+text:
+    title: 简介                                #任一文本标题
+    intro: > ##这里可以多行                    #任一文本内容
+        GitBlog是一个简单易用的Markdown博客系统，
+        这是GitBlog的官方文档.
