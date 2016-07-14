@@ -1,6 +1,6 @@
 #GitBlog配置文件，使用4个空格代替Tab
 ---
-url             : "http://gitblogdoc.sinaapp.com" #网站首页url
+url             : "http://gitblogdoc.gitblog.cn" #网站首页url
 title           : GitBlog文档                  #博客标题
 subtitle        : gitblog使用手册              #博客副标题
 theme           : quest                        #主题名称
