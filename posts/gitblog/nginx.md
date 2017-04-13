@@ -21,6 +21,7 @@ summary: 如果你自己拥有服务器或者云平台提供的云主机，我�
 
 nginx可参考如下配置：
 
+
 ```
 server {
         listen       80;
@@ -57,6 +58,17 @@ server {
 ```
 
 将以上配置中的server_name和root改成你自己的，fastcgi_pass配成你的CGI进程端口。
+
+这里需要格外注意的是，如果gitblog不是部署在web服务的根目录下，应当对rewrite规则进行相应的修改。例如，当gitblog的首页部署在 http://XXX.net/BBB/CCC/DDD/EEE/ 下，则上述配置中的`location / {}`块应当修改为
+
+```
+location /BBB/CCC/DDD/EEE/ {
+    if (!-e $request_filename) {
+        rewrite ^\/BBB/CCC/DDD/EEE(.*)$ /BBB/CCC/DDD/EEE/index.php?$1 last;
+        break;
+    }
+}
+```
 
 ## 权限配置 ##
 
